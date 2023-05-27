@@ -1,0 +1,625 @@
+/* IMPORTING GOOGLE FONTS   */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Color Variables */
+:root {
+  --black-color: #4d4d4d;
+  --blue-color: #404f6c;
+  --primary-color: #ffffff;
+  --link-color: #404f6c;
+  --link-hover-decoration: underline;
+  --active-link-color: #b0b4be;
+  --transparent-blue: rgba(13, 21, 36, 0.8);
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url("assets/background/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  background-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.links a {
+  margin-left: 10px;
+  color: var(--link-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  transition: text-decoration 0.3s;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  text-decoration: var(--link-hover-decoration);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); /* Subtracting the height of the header */
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Top Text Styles */
+.top {
+  display: block;
+  font-family: "Inter", sans-serif;
+  color: var(--black-color);
+  font-size: 6vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5vw; /* Responsive letter spacing */
+}
+
+/* Bottom Text Styles */
+.bottom {
+  display: block;
+  font-family: "Inter", sans-serif;
+  color: var(--blue-color);
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*
+
+section 2 styles 
+
+
+*/
+
+.section2 {
+  background-image: url("assets/background/img2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110vh;
+  position: relative;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+.logo2 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.logo2-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.logo2-text1 {
+  color: var(--black-color);
+}
+
+.logo2-text2 {
+  color: var(--blue-color);
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  font-family: "Bebas", sans-serif;
+}
+
+.colab {
+  max-width: 70%;
+}
+
+.colab .number {
+  font-size: 8em;
+  font-weight: 700;
+  color: var(--active-link-color);
+}
+
+.colab .title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5em;
+  margin-left: -33px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--blue-color);
+}
+
+.colab .discription {
+  font-family: "Inter", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.num-hist {
+  display: flex;
+  align-items: center;
+}
+
+.imagepart {
+  width: 100%;
+  height: 220px;
+  background-color: var(
+    --transparent-blue
+  ); /* Assuming you've defined the transparent blue color as a variable */
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.slide {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  margin-right: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*
+
+  SECTION 3 STYLES 
+
+
+
+  */
+
+.section3 {
+  height: 110vh;
+  background-image: url("assets/background/img3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.climb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  font-family: "Bebas", sans-serif;
+  background: var(--primary-color);
+}
+
+.colab2 {
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  color: var(--active-link-color);
+}
+
+.colab2 .number {
+  font-size: 10em;
+  font-weight: 700;
+}
+
+.colab2 .title {
+  font-size: 2.5em;
+  color: var(--blue-color);
+  margin-left: -33px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.colab2 .discription {
+  font-family: "Bebas", sans-serif;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background: var(--blue-color);
+}
+.buttons {
+  margin-left: 15%;
+}
+
+.card-container {
+  margin-top: 20px;
+}
+
+.menu .mountain1,
+.mountain2 {
+  padding: 8.5px;
+  background: var(--blue-color);
+  font-family: "Bebas", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--active-link-color);
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+.menu .mountain1.active,
+.menu .mountain2.active {
+  background-color: var(--active-link-color);
+  color: var(--blue-color);
+}
+
+.card1,
+.card2 {
+  display: none;
+  width: 350px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.877);
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.card-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-style .title {
+  font-family: "Bebas", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 10px 0;
+  color: var(--blue-color);
+}
+.card-style .info {
+  display: flex;
+}
+
+.card-style .info .date {
+  font-family: "Bebas", sans-serif;
+  margin: 0 20px;
+}
+
+.card-style .info .location {
+  font-family: "Bebas", sans-serif;
+  margin: 0 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--blue-color);
+  color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Add wrap to allow responsive layout */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footerl-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1vw; /* Responsive font size for footer text */
+}
+
+.footer-copyright {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1vw; /* Responsive font size for copyright text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .logo-texts {
+    font-size: 0.8em;
+  }
+
+  .top {
+    font-size: 8vw;
+    letter-spacing: 1vw;
+  }
+
+  .bottom {
+    font-size: 5vw;
+  }
+
+  .links a {
+    font-size: 0.7rem;
+  }
+
+  /* SECTION 2  */
+
+  .history {
+    margin-top: 10%;
+  }
+
+  .colab .number {
+    font-size: 3.5em;
+  }
+
+  .colab .title {
+    font-size: 2.3em;
+    margin-left: 5px;
+  }
+
+  .colab {
+    max-width: 80%;
+  }
+
+  .colab .discription {
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  /*
+
+  SECTION 3 STYLES 
+
+
+
+  */
+
+  .climb {
+    margin-top: 3%;
+  }
+
+  .colab2 {
+    flex-direction: column;
+    max-width: 98%;
+  }
+
+  .colab2 .number {
+    font-size: 3.5em;
+  }
+
+  .colab2 .title {
+    font-size: 2.3em;
+    margin-left: 5px;
+    margin-bottom: -10px;
+  }
+
+  .card-container {
+    margin-top: 20px;
+  }
+
+  .card1,
+  .card2 {
+    margin-top: 20%;
+  }
+
+  /* FOOTER MOBILE VERISON  */
+
+  .footer-logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .footer-copyright {
+    font-size: 1.3vw;
+  }
+  .footer-text {
+    font-size: 1.3vw;
+  }
+}
+
+/* Responsive Styles For mini screen  */
+@media (max-width: 441px) {
+  .logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .logo-texts {
+    font-size: 0.6em;
+  }
+
+  .top {
+    font-size: 1.6rem;
+  }
+
+  .bottom {
+    font-size: 1.1em;
+  }
+
+  .links a {
+    font-size: 0.5rem;
+  }
+
+  /* SECTION 2  */
+
+  .colab .number {
+    font-size: 2rem;
+  }
+
+  .colab .title {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  .colab {
+    max-width: 90%;
+  }
+
+  .colab .discription {
+    margin-left: 3%;
+    font-size: 0.8rem;
+  }
+
+  /*
+
+  SECTION 3 STYLES 
+
+
+
+  */
+
+  .colab2 .number {
+    font-size: 2rem;
+  }
+
+  .colab2 .title {
+    font-size: 1.5rem;
+    margin-bottom: -5px;
+  }
+
+  .colab2 .discription {
+    font-size: 0.8rem;
+  }
+
+  /* FOOTER MOBILE VERISON  */
+
+  .footer-logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .footer-copyright {
+    font-size: 1.3vw;
+  }
+  .footer-text {
+    font-size: 1.3vw;
+  }
+
+  .menu .mountain1,
+  .mountain2 {
+    padding: 3px;
+    font-size: 0.8rem;
+  }
+
+  .card1,
+  .card2 {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .card-style .title {
+    font-size: 1.2rem;
+  }
+
+  .card-style .info .date,
+  .location {
+    font-size: 0.6rem;
+  }
+
+  .logo2-text .logo2-text1,
+  .logo2-text .logo2-text2 {
+    font-size: 0.6rem;
+  }
+}
