@@ -1,4 +1,6 @@
-/* IMPORTING GOOGLE FONTS   */
+/* IMPORTING GOOGLE FONTS
+
+*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
@@ -21,7 +23,7 @@ body {
 }
 
 .main {
-  background-image: url("assets/background/img1.jpg");
+  background-image: url("../public/assets/background/img1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,6 +63,9 @@ nav {
   text-decoration: var(--link-hover-decoration);
 }
 
+.activelink {
+  border-bottom: 1px solid var(--blue-color);
+}
 .content {
   display: flex;
   justify-content: center;
@@ -101,7 +106,7 @@ section 2 styles
 */
 
 .section2 {
-  background-image: url("assets/background/img2.jpg");
+  background-image: url("../public/assets/background/img2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -261,7 +266,7 @@ section 2 styles
 
 .section3 {
   height: 110vh;
-  background-image: url("assets/background/img3.jpg");
+  background-image: url("../public/assets/background/img3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 import applyAnimation from "./animate";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Section2 = () => {
   const [ref, inView] = useInView({
@@ -56,10 +57,30 @@ const Section2 = () => {
           className="links"
         >
           <i>
-            <a href="#section2">01 History</a>
+            <Link
+              to="section2"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              activeClass="activelink"
+              style={{ cursor: "pointer" }}
+            >
+              01 History
+            </Link>
           </i>
           <i>
-            <a href="#section3">Team</a>
+            <Link
+              to="section3"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              activeClass="activelink"
+              style={{ cursor: "pointer" }}
+            >
+              Team
+            </Link>
           </i>
         </animated.div>
       </div>
